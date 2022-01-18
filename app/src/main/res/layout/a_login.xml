@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
+
+    <ImageView
+        android:id="@+id/logo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="36dp"
+        android:background="@color/sig_orange"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/logo2" />
+
+    <LinearLayout
+        android:id="@+id/edit_login"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_gravity="center"
+        android:gravity="center"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/logo"
+        android:layout_marginTop="40dp">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="15dp"
+            android:text="당신의 모든 감리 AllScape"
+            android:layout_gravity="center"
+            android:textColor="@color/sig_gray"
+            android:textSize="16sp"
+            android:fontFamily="@font/jalnan"
+            app:layout_constraintTop_toBottomOf="@+id/logo" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:padding="10dp">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:fontFamily="@font/jalnan"
+                android:gravity="center"
+                android:text="ID"
+                android:textSize="18sp"
+                android:textColor="@color/sig_navy"
+                android:textStyle="bold" />
+            <EditText
+                android:id="@+id/editTextTextEmailAddress"
+                android:layout_width="0dp"
+                android:layout_height="48dp"
+                android:layout_weight="1"
+                android:layout_marginStart="20dp"
+                android:ems="23"
+                android:hint="이메일을 입력해주세요."
+                android:textColorHint="#80363F45"
+                android:textColor="@color/sig_gray"
+                android:inputType="textEmailAddress"
+                android:fontFamily="@font/jalnan"
+                android:textSize="12sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:padding="10dp">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:fontFamily="@font/jalnan"
+                android:gravity="center"
+                android:textColor="@color/sig_navy"
+                android:text="Pw"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+            <EditText
+                android:id="@+id/editTextTextPassword2"
+                android:layout_width="0dp"
+                android:layout_height="48dp"
+                android:layout_weight="1"
+                android:layout_marginStart="10dp"
+                android:ems="23"
+                android:textColor="@color/sig_gray"
+                android:hint="비밀번호을 입력해주세요."
+                android:textColorHint="#80363F45"
+                android:inputType="textPassword"
+                android:fontFamily="@font/jalnan"
+                android:textSize="12sp" />
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/LoginBtn"
+            android:layout_width="90dp"
+            android:layout_height="48dp"
+            android:layout_gravity="end"
+            android:gravity="center"
+            android:layout_marginEnd="10dp"
+            android:background="@drawable/sig_btn2"
+            android:fontFamily="@font/jalnan"
+            android:textSize="12sp"
+            android:text="로 그 인" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:orientation="vertical"
+        android:padding="10dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/edit_login">
+        <Button
+            android:id="@+id/facebook_login_btn"
+            android:layout_width="340dp"
+            android:layout_height="48dp"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/facebook_login"
+            android:fontFamily="@font/jalnan"
+            android:text="   페이스북으로 시작하기"
+            android:textSize="15sp"
+            app:layout_constraintBottom_toTopOf="@+id/kakao_login"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+        <Button
+            android:id="@+id/kakao_login_btn"
+            android:layout_width="340dp"
+            android:layout_height="48dp"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/kakao_log"
+            android:fontFamily="@font/jalnan"
+            android:text="   카카오톡으로 시작하기"
+            android:textSize="15sp"
+            app:layout_constraintBottom_toTopOf="@+id/button"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+        <Button
+            android:id="@+id/mail_login_btn"
+            android:layout_width="340dp"
+            android:layout_height="48dp"
+            android:background="@drawable/small_sig_button"
+            android:fontFamily="@font/jalnan"
+            android:text="   메일로 시작하기"
+            android:textSize="15sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+    </LinearLayout>
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

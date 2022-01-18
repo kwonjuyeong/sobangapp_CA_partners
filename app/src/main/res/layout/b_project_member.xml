@@ -1,0 +1,529 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <include
+        layout="@layout/z_default_toolbar"
+        android:id="@+id/toolbar"/>
+
+    <LinearLayout
+        android:id="@+id/linearLayout2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/sig_navy"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/toolbar">
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_weight="0.9">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="프로젝트 멤버"
+                android:padding="15dp"
+                android:textSize="20sp"
+                android:textColor="@color/sig_gray"/>
+            <TextView
+                android:layout_width="60dp"
+                android:layout_height="wrap_content"
+                android:text="진행중"
+                android:textAlignment="center"
+                android:background="@drawable/round_man2"
+                android:layout_marginStart="15dp"
+                android:textSize="12sp"
+                android:textColor="@color/sig_gray"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="15dp"
+                android:maxLines="1"
+                android:maxLength="32"
+                android:text="남양주 다산신도시 지금지구 근생 및 업무시설"
+                android:textColor="@color/sig_gray" />
+        </LinearLayout>
+        <ImageView
+            android:id="@+id/add_member_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="5dp"
+            android:layout_gravity="end"
+            android:layout_weight="0.3"
+            app:srcCompat="@drawable/friend_add" />
+    </LinearLayout>
+
+    <!--개인적으로 사람 검색기능이 있으면 편할 것 같습니다. 또 비상 연락망?도 있으면 편리할 것 같네요-->
+
+
+    <!--리사이클러 or 리스트 뷰로 구현해야합니다. 테스트용으로 넣어놨습니다-->
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout2">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:id="@+id/member_item"
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:orientation="horizontal">
+                <ImageView
+                    android:layout_width="100dp"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/round_man2"
+                    app:srcCompat="@drawable/logo1" />
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/round_man2"
+                        android:padding="10dp"
+                        android:text="김이사"
+                        android:textColor="@color/sig_navy"
+                        android:textSize="16sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/round_man2"
+                        android:padding="10dp"
+                        android:text="CAE, 대표이사"
+                        android:textColor="@color/sig_navy"
+                        android:textSize="14sp" />
+                </LinearLayout>
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.01"
+                    android:background="@drawable/round_man2"
+                    app:srcCompat="@drawable/ic_baseline_keyboard_arrow_right_24">
+                </ImageView>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/member_item2"
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:orientation="horizontal"
+                app:layout_constraintTop_toBottomOf="@+id/member_item">
+
+                <ImageView
+                    android:layout_width="100dp"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/round_man2"
+                    app:srcCompat="@drawable/logo2" />
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/round_man2"
+                        android:padding="10dp"
+                        android:text="박대리"
+                        android:textColor="@color/sig_navy"
+                        android:textSize="16sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/round_man2"
+                        android:padding="10dp"
+                        android:text="CA건설, 아비부 대리"
+                        android:textColor="@color/sig_navy"
+                        android:textSize="14sp" />
+                </LinearLayout>
+
+                <ImageView
+                    android:id="@+id/imageView2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.01"
+                    android:background="@drawable/round_man2"
+                    app:srcCompat="@drawable/ic_baseline_keyboard_arrow_right_24">
+
+                </ImageView>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/member_item3"
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:orientation="horizontal"
+                app:layout_constraintTop_toBottomOf="@+id/member_item2">
+
+                <ImageView
+                    android:layout_width="100dp"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/round_man2"
+                    app:srcCompat="@drawable/test3" />
+
+                <LinearLayout
+                    android:id="@+id/testID"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/round_man2"
+                        android:padding="10dp"
+                        android:text="최부장"
+                        android:textColor="@color/sig_navy"
+                        android:textSize="16sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/round_man2"
+                        android:padding="10dp"
+                        android:text="GM PARTNER"
+                        android:textColor="@color/sig_navy"
+                        android:textSize="14sp" />
+                </LinearLayout>
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.01"
+                    android:background="@drawable/round_man2"
+                    app:srcCompat="@drawable/ic_baseline_keyboard_arrow_right_24"></ImageView>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/member_item4"
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:orientation="horizontal"
+                app:layout_constraintTop_toBottomOf="@+id/member_item3">
+
+                <ImageView
+                    android:layout_width="100dp"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/round_man2"
+                    app:srcCompat="@drawable/test5" />
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/round_man2"
+                        android:padding="10dp"
+                        android:text="김을미"
+                        android:textColor="@color/sig_navy"
+                        android:textSize="16sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/round_man2"
+                        android:padding="10dp"
+                        android:text="GS 건설, 시행부 대리"
+                        android:textColor="@color/sig_navy"
+                        android:textSize="14sp" />
+                </LinearLayout>
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.01"
+                    android:background="@drawable/round_man2"
+                    app:srcCompat="@drawable/ic_baseline_keyboard_arrow_right_24">
+
+                </ImageView>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/member_item5"
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:orientation="horizontal"
+                app:layout_constraintTop_toBottomOf="@+id/member_item4">
+
+                <ImageView
+                    android:layout_width="100dp"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/round_man2"
+                    app:srcCompat="@drawable/test5" />
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/round_man2"
+                        android:padding="10dp"
+                        android:text="박혁거세"
+                        android:textColor="@color/sig_navy"
+                        android:textSize="16sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/round_man2"
+                        android:padding="10dp"
+                        android:text="GM PARTNER, 경영부 사원"
+                        android:textColor="@color/sig_navy"
+                        android:textSize="14sp" />
+                </LinearLayout>
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.01"
+                    android:background="@drawable/round_man2"
+                    app:srcCompat="@drawable/ic_baseline_keyboard_arrow_right_24">
+
+                </ImageView>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/member_item6"
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:orientation="horizontal"
+                app:layout_constraintTop_toBottomOf="@+id/member_item5">
+
+                <ImageView
+                    android:layout_width="100dp"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/round_man2"
+                    app:srcCompat="@drawable/test5" />
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/round_man2"
+                        android:padding="10dp"
+                        android:text="이세상"
+                        android:textColor="@color/sig_navy"
+                        android:textSize="16sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/round_man2"
+                        android:padding="10dp"
+                        android:text="GS group, 시행부 부장"
+                        android:textColor="@color/sig_navy"
+                        android:textSize="14sp" />
+                </LinearLayout>
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.01"
+                    android:background="@drawable/round_man2"
+                    app:srcCompat="@drawable/ic_baseline_keyboard_arrow_right_24">
+
+                </ImageView>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/member_item7"
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:background="@color/sig_gray"
+                android:orientation="horizontal"
+                app:layout_constraintTop_toBottomOf="@+id/member_item6">
+
+                <ImageView
+                    android:layout_width="100dp"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/round_man2"
+                    app:srcCompat="@drawable/test5" />
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/round_man2"
+                        android:padding="10dp"
+                        android:text="을세월"
+                        android:textColor="@color/sig_navy"
+                        android:textSize="16sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/round_man2"
+                        android:padding="10dp"
+                        android:text="GS group, 시행부 사원"
+                        android:textColor="@color/sig_navy"
+                        android:textSize="14sp" />
+                </LinearLayout>
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.01"
+                    android:background="@drawable/round_man2"
+                    app:srcCompat="@drawable/ic_baseline_keyboard_arrow_right_24">
+
+                </ImageView>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/member_item8"
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:background="@color/sig_gray"
+                android:orientation="horizontal"
+                app:layout_constraintTop_toBottomOf="@+id/member_item7">
+
+                <ImageView
+                    android:layout_width="100dp"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/round_man2"
+                    app:srcCompat="@drawable/test5" />
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/round_man2"
+                        android:padding="10dp"
+                        android:text="그래요"
+                        android:textColor="@color/sig_navy"
+                        android:textSize="16sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/round_man2"
+                        android:padding="10dp"
+                        android:text="GS group, 경영부 대리"
+                        android:textColor="@color/sig_navy"
+                        android:textSize="14sp" />
+                </LinearLayout>
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.01"
+                    android:background="@drawable/round_man2"
+                    app:srcCompat="@drawable/ic_baseline_keyboard_arrow_right_24">
+
+                </ImageView>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/member_item9"
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:background="@color/sig_gray"
+                android:orientation="horizontal"
+                app:layout_constraintTop_toBottomOf="@+id/member_item8">
+
+                <ImageView
+                    android:layout_width="100dp"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/round_man2"
+                    app:srcCompat="@drawable/test5" />
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/round_man2"
+                        android:padding="10dp"
+                        android:text="그래요"
+                        android:textColor="@color/sig_navy"
+                        android:textSize="16sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/round_man2"
+                        android:padding="10dp"
+                        android:text="GS group, 경영부 대리"
+                        android:textColor="@color/sig_navy"
+                        android:textSize="14sp" />
+                </LinearLayout>
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.01"
+                    android:background="@drawable/round_man2"
+                    app:srcCompat="@drawable/ic_baseline_keyboard_arrow_right_24">
+                </ImageView>
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+    <!-- 시연용 잠시 보류
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="665dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout2" />
+-->
+</androidx.constraintlayout.widget.ConstraintLayout>

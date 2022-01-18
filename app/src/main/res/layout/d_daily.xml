@@ -1,0 +1,206 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <include
+        layout="@layout/z_save_default_toolbar"
+        android:id="@+id/toolbar"/>
+
+    <!-- 오늘 날짜 -->
+    <TextView
+        android:id="@+id/daily_date"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="end"
+        android:text="2022/01/18"
+        android:textSize="16sp"
+        android:textAlignment="textEnd"
+        android:layout_marginEnd="10dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/toolbar" />
+
+
+    <!-- 서류 양식-->
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/daily_date">
+    <LinearLayout
+        android:id="@+id/daily_linear"
+        android:layout_marginStart="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="1. 설계도서 검토"
+                android:textSize="20sp"
+                android:fontFamily="@font/jalnan"
+                android:textColor="@color/sig_navy"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="1) 소방 전기 도면 검토"
+                android:layout_marginStart="10dp"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:textColor="@color/sig_navy" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:text="(1) 자동화재탐지설비"
+                android:textColor="@color/sig_navy"
+                android:textSize="16sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:orientation="vertical">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="2) 시공 상세도 승인 요청서 검토 및 승인"
+                android:layout_marginStart="10dp"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:textColor="@color/sig_navy" />
+            <LinearLayout
+               android:layout_width="match_parent"
+               android:layout_height="match_parent"
+               android:orientation="horizontal">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="(1) 위치 및 공종 : "
+                    android:layout_marginStart="20dp"
+                    android:textSize="16sp"
+                    android:textColor="@color/sig_navy" />
+                <EditText
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="14sp"
+                    android:textColor="@color/sig_navy"
+                    android:hint="위치 및 공종을 작성해주세요."
+                    android:layout_marginEnd="10dp"
+                    android:maxLines="1"
+                    android:maxLength="50"/>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="(2) 부 위 : "
+                    android:layout_marginStart="20dp"
+                    android:textSize="16sp"
+                    android:textColor="@color/sig_navy" />
+                <EditText
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="14sp"
+                    android:textColor="@color/sig_navy"
+                    android:hint="위치 및 공종을 작성해주세요."
+                    android:layout_marginEnd="10dp"
+                    android:maxLines="1"
+                    android:maxLength="50"/>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="(3) 문서번호 : "
+                    android:layout_marginStart="20dp"
+                    android:textSize="16sp"
+                    android:textColor="@color/sig_navy" />
+                <EditText
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="14sp"
+                    android:textColor="@color/sig_navy"
+                    android:hint="문서번호를 입력해주세요."
+                    android:layout_marginEnd="10dp"
+                    android:maxLines="1"
+                    android:maxLength="50"/>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="(4) 검토 항목 : "
+                    android:layout_marginStart="20dp"
+                    android:textSize="16sp"
+                    android:textColor="@color/sig_navy" />
+                <EditText
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="14sp"
+                    android:textColor="@color/sig_navy"
+                    android:hint="검토 항목에 대해 적어주세요. "
+                    android:layout_marginEnd="10dp"
+                    android:maxLines="1"
+                    android:maxLength="50"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="(5) 검토 결과 : "
+                    android:layout_marginStart="20dp"
+                    android:textSize="16sp"
+                    android:textColor="@color/sig_navy" />
+                <EditText
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="14sp"
+                    android:textColor="@color/sig_navy"
+                    android:layout_marginEnd="10dp"
+                    android:maxLines="1"
+                    android:maxLength="50"/>
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+
+
+
+
+
+
+
+    </LinearLayout>
+
+
+
+    </ScrollView>
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,209 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <include
+        layout="@layout/z_default_toolbar"
+        android:id="@+id/toolbar"/>
+
+    <TextView
+        android:id="@+id/textView10"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="@color/sig_navy"
+        android:textColor="@color/sig_gray"
+        android:fontFamily="@font/jalnan"
+        android:gravity="center"
+        android:text="업무 알림 목록"
+        android:textSize="15sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/toolbar" />
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/textView10">
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+    <LinearLayout
+        android:id="@+id/hi1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:background="@drawable/round_man">
+        <ImageView
+            android:id="@+id/imageView6"
+            android:layout_width="50dp"
+            android:layout_height="50sp"
+            app:srcCompat="@drawable/test3"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_marginStart="10dp"
+            android:text="김아무개님의 '설비 검토 요청'입니다!"
+            android:layout_gravity="center"
+            android:fontFamily="@font/jalnan"
+            android:textColor="@color/sig_navy"
+            />
+        <Button
+            android:id="@+id/yesbtn"
+            android:layout_width="70dp"
+            android:layout_height="48dp"
+            android:text="수락"
+            android:layout_gravity="end"
+            android:fontFamily="@font/jalnan"
+            android:textColor="@color/sig_navy"/>
+    </LinearLayout>
+
+
+
+    <LinearLayout
+        android:id="@+id/hi2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/hi1"
+        android:background="@color/sig_orange">
+        <ImageView
+            android:layout_width="50dp"
+            android:layout_height="50sp"
+            app:srcCompat="@drawable/ic_baseline_warning_24"/>
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_marginStart="10dp"
+            android:text="오늘은 '현장 정기 교육'의 날입니다.\n반드시 교육을 진행해주세요!!!"
+            android:layout_gravity="center"
+            android:fontFamily="@font/jalnan"
+            android:textColor="@color/sig_gray"
+            />
+        <Button
+            android:id="@+id/yesbtn2"
+            android:layout_width="70dp"
+            android:layout_height="48dp"
+            android:text="확인"
+            android:layout_gravity="end"
+            android:fontFamily="@font/jalnan"
+            android:textColor="@color/sig_navy"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/hi3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/hi2"
+        android:background="@drawable/round_man">
+
+        <ImageView
+            android:layout_width="50dp"
+            android:layout_height="50sp"
+            app:srcCompat="@drawable/test4"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_marginStart="10dp"
+            android:text="최부장님의 '예비완공공사 완료' 알림입니다!"
+            android:layout_gravity="center"
+            android:fontFamily="@font/jalnan"
+            android:textColor="@color/sig_navy"
+            />
+        <Button
+            android:id="@+id/yesbtn3"
+            android:layout_width="70dp"
+            android:layout_height="48dp"
+            android:text="수락"
+            android:layout_gravity="end"
+            android:fontFamily="@font/jalnan"
+            android:textColor="@color/sig_navy"/>
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/hi4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/hi3"
+        android:background="@drawable/round_man">
+
+        <ImageView
+            android:layout_width="50dp"
+            android:layout_height="50sp"
+            app:srcCompat="@drawable/test6"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_marginStart="10dp"
+            android:text="수님의 '결재내역 승인 요청' 알림입니다!"
+            android:layout_gravity="center"
+            android:fontFamily="@font/jalnan"
+            android:textColor="@color/sig_navy"
+            />
+        <Button
+            android:id="@+id/yesbtn4"
+            android:layout_width="70dp"
+            android:layout_height="48dp"
+            android:text="수락"
+            android:layout_gravity="end"
+            android:fontFamily="@font/jalnan"
+            android:textColor="@color/sig_navy"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/hi5"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/hi4"
+        android:background="@drawable/round_man">
+
+        <ImageView
+            android:layout_width="50dp"
+            android:layout_height="50sp"
+            app:srcCompat="@drawable/test7"/>
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_marginStart="10dp"
+            android:text="상사님의 '친구 요청' 알림입니다!"
+            android:layout_gravity="center"
+            android:fontFamily="@font/jalnan"
+            android:textColor="@color/sig_navy"
+            />
+        <Button
+            android:id="@+id/yesbtn5"
+            android:layout_width="70dp"
+            android:layout_height="48dp"
+            android:text="수락"
+            android:layout_gravity="end"
+            android:fontFamily="@font/jalnan"
+            android:textColor="@color/sig_navy"/>
+    </LinearLayout>
+
+</LinearLayout>
+    </ScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>
