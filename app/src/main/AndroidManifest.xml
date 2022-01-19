@@ -54,7 +54,7 @@
         </activity>
         <activity android:name=".Detection_menu.FeedbackActivity">
         </activity>
-        <activity android:name=".Detection_menu.JajaeActivity">
+        <activity android:name=".Detection_menu.materialActivity">
         </activity>
         <activity android:name=".Detection_menu.ProgressActivity">
         </activity>

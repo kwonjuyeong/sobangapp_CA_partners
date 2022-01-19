@@ -4,6 +4,7 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.MenuItem;
 import android.view.View;
+import android.widget.ImageButton;
 import android.widget.ImageView;
 import android.widget.Toolbar;
 
@@ -15,10 +16,7 @@ public class ProjectIntroActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.b_project_intro);
-
-
-
-        ImageView project_back = findViewById(R.id.project_intro_backbtn);
+        ImageButton project_back = findViewById(R.id.toolbar_back_btn);
 
         project_back.setOnClickListener(new View.OnClickListener(){
             @Override

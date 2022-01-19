@@ -55,14 +55,16 @@
             android:fontFamily="@font/jalnan"
             android:textColor="@color/sig_navy"
             />
-        <Button
+        <ImageButton
             android:id="@+id/yesbtn"
             android:layout_width="70dp"
             android:layout_height="48dp"
             android:text="수락"
             android:layout_gravity="end"
             android:fontFamily="@font/jalnan"
-            android:textColor="@color/sig_navy"/>
+            android:textColor="@color/sig_navy"
+            android:background="@color/white"
+            app:srcCompat="@drawable/small_sig_button"/>
     </LinearLayout>
 
 
@@ -91,14 +93,16 @@
             android:fontFamily="@font/jalnan"
             android:textColor="@color/sig_gray"
             />
-        <Button
+        <ImageButton
             android:id="@+id/yesbtn2"
             android:layout_width="70dp"
-            android:layout_height="48dp"
+            android:layout_height="match_parent"
             android:text="확인"
             android:layout_gravity="end"
             android:fontFamily="@font/jalnan"
-            android:textColor="@color/sig_navy"/>
+            android:textColor="@color/sig_navy"
+            android:background="@color/sig_orange"
+            app:srcCompat="@drawable/small_sig_button"/>
     </LinearLayout>
 
     <LinearLayout
@@ -125,14 +129,16 @@
             android:fontFamily="@font/jalnan"
             android:textColor="@color/sig_navy"
             />
-        <Button
+        <ImageButton
             android:id="@+id/yesbtn3"
             android:layout_width="70dp"
             android:layout_height="48dp"
             android:text="수락"
             android:layout_gravity="end"
             android:fontFamily="@font/jalnan"
-            android:textColor="@color/sig_navy"/>
+            android:textColor="@color/sig_navy"
+            android:background="@color/white"
+            app:srcCompat="@drawable/small_sig_button"/>
     </LinearLayout>
 
 
@@ -160,14 +166,16 @@
             android:fontFamily="@font/jalnan"
             android:textColor="@color/sig_navy"
             />
-        <Button
+        <ImageButton
             android:id="@+id/yesbtn4"
             android:layout_width="70dp"
             android:layout_height="48dp"
             android:text="수락"
             android:layout_gravity="end"
             android:fontFamily="@font/jalnan"
-            android:textColor="@color/sig_navy"/>
+            android:textColor="@color/sig_navy"
+            android:background="@color/white"
+            app:srcCompat="@drawable/small_sig_button"/>
     </LinearLayout>
 
     <LinearLayout
@@ -194,14 +202,16 @@
             android:fontFamily="@font/jalnan"
             android:textColor="@color/sig_navy"
             />
-        <Button
+        <ImageButton
             android:id="@+id/yesbtn5"
             android:layout_width="70dp"
             android:layout_height="48dp"
             android:text="수락"
             android:layout_gravity="end"
             android:fontFamily="@font/jalnan"
-            android:textColor="@color/sig_navy"/>
+            android:textColor="@color/sig_navy"
+            android:background="@color/white"
+            app:srcCompat="@drawable/small_sig_button"/>
     </LinearLayout>
 
 </LinearLayout>

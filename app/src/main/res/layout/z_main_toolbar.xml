@@ -16,13 +16,14 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@drawable/logo2" />
-
-    <ImageView
+    <ImageButton
+        android:id="@+id/toolbar_menu"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        app:srcCompat="@drawable/menu"
+        android:layout_gravity="end"
         android:layout_marginEnd="15dp"
-        android:layout_gravity="end"/>
-
-
+        android:background="@color/sig_orange"
+        android:minWidth="48dp"
+        android:minHeight="48dp"
+        app:srcCompat="@drawable/menu" />
 </androidx.appcompat.widget.Toolbar>

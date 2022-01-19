@@ -3,6 +3,7 @@ package com.example.myapplication;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.ImageButton;
 import android.widget.ImageView;
 
 import androidx.appcompat.app.AppCompatActivity;
@@ -15,7 +16,7 @@ public class ChangeInfoActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.c_change_information);
 
-        ImageView comeback = findViewById(R.id.change_save_backbtn);
+        ImageButton comeback = findViewById(R.id.toolbar_menu);
 
 
         comeback.setOnClickListener(new View.OnClickListener(){

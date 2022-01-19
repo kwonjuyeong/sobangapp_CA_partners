@@ -12,7 +12,7 @@ import com.example.myapplication.Detection_menu.CheckListActivity;
 import com.example.myapplication.Detection_menu.DailyActivity;
 import com.example.myapplication.Detection_menu.DrawingActivity;
 import com.example.myapplication.Detection_menu.FeedbackActivity;
-import com.example.myapplication.Detection_menu.JajaeActivity;
+import com.example.myapplication.Detection_menu.materialActivity;
 import com.example.myapplication.Detection_menu.ProgressActivity;
 
 public class DetectionActivity extends AppCompatActivity {
@@ -68,7 +68,7 @@ public class DetectionActivity extends AppCompatActivity {
         jajae.setOnClickListener(new View.OnClickListener(){
             @Override
             public void onClick(View view){
-                Intent intent= new Intent(getApplicationContext(), JajaeActivity.class);
+                Intent intent= new Intent(getApplicationContext(), materialActivity.class);
                 startActivity(intent);
                 finish();
             }

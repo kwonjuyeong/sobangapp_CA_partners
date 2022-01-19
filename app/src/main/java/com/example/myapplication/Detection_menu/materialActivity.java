@@ -10,7 +10,7 @@ import androidx.appcompat.app.AppCompatActivity;
 import com.example.myapplication.DetectionActivity;
 import com.example.myapplication.R;
 
-public class  JajaeActivity extends AppCompatActivity {
+public class materialActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState){

@@ -7,13 +7,14 @@
     android:theme="@style/ThemeOverlay.AppCompat.ActionBar"
     app:popupTheme="@style/ThemeOverlay.AppCompat.Light">
 
-
-    <ImageView
+    <ImageButton
         android:id="@+id/toolbar_back_btn"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        app:srcCompat="@drawable/back_btn"
-        />
+        android:background="@color/sig_orange"
+        android:minWidth="48dp"
+        android:minHeight="48dp"
+        app:srcCompat="@drawable/back_btn" />
     <TextView
         android:id="@+id/toolbar_logo"
         android:layout_width="150dp"

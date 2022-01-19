@@ -26,8 +26,6 @@ public class CheckListActivity extends AppCompatActivity {
                 Intent intent= new Intent(getApplicationContext(), DetectionActivity.class);
                 startActivity(intent);
                 finish();
-
-
             }
         });
 
