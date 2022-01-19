@@ -38,23 +38,25 @@
         </activity>
         <activity android:name=".WorkNotionActivity">
         </activity>
+        <activity android:name=".DetectionActivity">
+        </activity>
         <activity android:name=".notion.NotionTest1">
         </activity>
         <activity android:name=".notion.NotionTest2">
         </activity>
         <activity android:name=".notion.NotionTest3">
         </activity>
-        <activity android:name=".punchlist.DailyActivity">
+        <activity android:name=".Detection_menu.DailyActivity">
         </activity>
-        <activity android:name=".punchlist.CheckListActivity">
+        <activity android:name=".Detection_menu.CheckListActivity">
         </activity>
-        <activity android:name=".punchlist.DrawingActivity">
+        <activity android:name=".Detection_menu.DrawingActivity">
         </activity>
-        <activity android:name=".punchlist.FeedbackActivity">
+        <activity android:name=".Detection_menu.FeedbackActivity">
         </activity>
-        <activity android:name=".punchlist.JajaeActivity">
+        <activity android:name=".Detection_menu.JajaeActivity">
         </activity>
-        <activity android:name=".punchlist.ProgressActivity">
+        <activity android:name=".Detection_menu.ProgressActivity">
         </activity>
 
 

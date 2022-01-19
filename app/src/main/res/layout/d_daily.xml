@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     xmlns:app="http://schemas.android.com/apk/res-auto">
@@ -14,90 +13,604 @@
         android:id="@+id/daily_date"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:gravity="end"
+        android:background="@drawable/round_man2"
         android:text="2022/01/18"
         android:textSize="16sp"
         android:textAlignment="textEnd"
+        android:gravity="end"
         android:layout_marginEnd="10dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/toolbar" />
 
 
-    <!-- 서류 양식-->
+    <!-- 서류 양식 전체-->
     <ScrollView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
+        android:layout_gravity="fill"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/daily_date">
     <LinearLayout
         android:id="@+id/daily_linear"
-        android:layout_marginStart="10dp"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="vertical">
+        android:orientation="vertical"
+        android:layout_marginTop="20dp"
+        android:layout_marginStart="10dp">
 
+
+        <!-- 1. 설계도서 검토 항목 -->
         <LinearLayout
-            android:layout_width="wrap_content"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:background="@drawable/round_man2"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/jalnan"
+                android:text="1. 설계도서 검토"
+                android:textColor="@color/sig_navy"
+                android:textSize="20sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="5dp"
+                android:text="1) 소방 전기 도면 검토"
+                android:textColor="@color/sig_navy"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="5dp"
+                android:text="(1) 자동화재탐지설비"
+                android:textColor="@color/sig_navy"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+
+            <!-- 1. 설계도서 검토항목 2-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:text="2) 시공 상세도 승인 요청서 검토 및 승인"
+                    android:textColor="@color/sig_navy"
+                    android:textSize="16sp"
+                    android:textStyle="bold" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="20dp"
+                        android:text="(1) 위치 및 공종 : "
+                        android:textColor="@color/sig_navy"
+                        android:textSize="16sp"
+                        android:textStyle="bold" />
+
+                    <EditText
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="10dp"
+                        android:hint="위치 및 공종을 작성해주세요."
+                        android:inputType="text"
+                        android:maxLength="50"
+                        android:maxLines="1"
+                        android:textColor="@color/sig_navy"
+                        android:textSize="18sp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="20dp"
+                        android:text="(2) 부 위 : "
+                        android:textColor="@color/sig_navy"
+                        android:textSize="16sp"
+                        android:textStyle="bold" />
+
+                    <EditText
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="10dp"
+                        android:hint="검토한 위치를 알려주세요."
+                        android:inputType="text"
+                        android:maxLength="50"
+                        android:maxLines="1"
+                        android:textColor="@color/sig_navy"
+                        android:textSize="18sp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="20dp"
+                        android:text="(3) 문서번호 : "
+                        android:textColor="@color/sig_navy"
+                        android:textSize="16sp"
+                        android:textStyle="bold" />
+
+                    <EditText
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="10dp"
+                        android:hint="문서번호를 입력해주세요."
+                        android:inputType="text"
+                        android:maxLength="50"
+                        android:maxLines="1"
+                        android:textColor="@color/sig_navy"
+                        android:textSize="18sp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="20dp"
+                        android:text="(4) 검토 항목 : "
+                        android:textColor="@color/sig_navy"
+                        android:textSize="16sp"
+                        android:textStyle="bold" />
+
+                    <EditText
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="10dp"
+                        android:hint="검토 항목을 작성해주세요. "
+                        android:maxLength="50"
+                        android:maxLines="1"
+                        android:textColor="@color/sig_navy"
+                        android:textSize="18sp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginStart="20dp"
+                        android:text="(5) 검토 결과 : "
+                        android:textColor="@color/sig_navy"
+                        android:textSize="16sp"
+                        android:textStyle="bold" />
+
+                    <RadioGroup
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <RadioButton
+                            android:layout_width="wrap_content"
+                            android:layout_height="48dp"
+                            android:fontFamily="@font/jalnan"
+                            android:text="적합"
+                            android:textSize="18sp">
+
+                        </RadioButton>
+
+                        <RadioButton
+                            android:layout_width="wrap_content"
+                            android:layout_height="48dp"
+                            android:fontFamily="@font/jalnan"
+                            android:text="부적합"
+                            android:textSize="18sp">
+
+                        </RadioButton>
+                    </RadioGroup>
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+
+
+        <!-- 2. 서류 검토 항목 -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:background="@drawable/round_man2"
             android:orientation="vertical">
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="1. 설계도서 검토"
+                android:text="2. 서류 검토 및 작성"
                 android:textSize="20sp"
                 android:fontFamily="@font/jalnan"
                 android:textColor="@color/sig_navy"/>
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="1) 소방 전기 도면 검토"
+                android:text="1) 자재 검수 요청서 접수, 검토 및 승인"
                 android:layout_marginStart="10dp"
+                android:layout_marginTop="5dp"
                 android:textSize="16sp"
                 android:textStyle="bold"
                 android:textColor="@color/sig_navy" />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="20dp"
+                    android:text="(1) 품목 : "
+                    android:textColor="@color/sig_navy"
+                    android:textSize="16sp"
+                    android:textStyle="bold" />
+
+                <EditText
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="10dp"
+                    android:hint="품목 작성."
+                    android:maxLength="50"
+                    android:maxLines="1"
+                    android:textColor="@color/sig_navy"
+                    android:textSize="18sp"
+                    android:inputType="text" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="(1) 문서번호 : "
+                    android:textStyle="bold"
+                    android:layout_marginStart="20dp"
+                    android:textSize="16sp"
+                    android:textColor="@color/sig_navy" />
+
+                <EditText
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="10dp"
+                    android:hint="문서 번호를 입력해주세요."
+                    android:maxLength="50"
+                    android:maxLines="1"
+                    android:textColor="@color/sig_navy"
+                    android:textSize="18sp"
+                    android:inputType="text" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="20dp"
+                    android:text="(2) 규격 및 수량 : "
+                    android:textColor="@color/sig_navy"
+                    android:textSize="16sp"
+                    android:textStyle="bold" />
+
+                <EditText
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="10dp"
+                    android:hint="규격 및 수량 입력."
+                    android:maxLength="50"
+                    android:maxLines="1"
+                    android:textColor="@color/sig_navy"
+                    android:textSize="18sp"
+                    android:inputType="text" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="(3) 제조사명 : "
+                    android:textStyle="bold"
+                    android:layout_marginStart="20dp"
+                    android:textSize="16sp"
+                    android:textColor="@color/sig_navy" />
+
+                <EditText
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="10dp"
+                    android:hint="제조사를 입력해주세요. "
+                    android:maxLength="50"
+                    android:maxLines="1"
+                    android:textColor="@color/sig_navy"
+                    android:textSize="18sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="(4) 첨부 서류 : "
+                    android:textStyle="bold"
+                    android:layout_marginStart="20dp"
+                    android:textSize="16sp"
+                    android:textColor="@color/sig_navy" />
+
+                <EditText
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="10dp"
+                    android:hint="첨부한 서류 내용을 입력해주세요. "
+                    android:maxLength="50"
+                    android:maxLines="1"
+                    android:textColor="@color/sig_navy"
+                    android:textSize="18sp" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="20dp"
+                    android:text="(5) 검토 결과 : "
+                    android:layout_gravity="center"
+                    android:textColor="@color/sig_navy"
+                    android:textSize="16sp"
+                    android:textStyle="bold" />
+                <RadioGroup
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+                    <RadioButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="48dp"
+                        android:text="적합"
+                        android:textSize="18sp"
+                        android:fontFamily="@font/jalnan">
+                    </RadioButton>
+                    <RadioButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="48dp"
+                        android:text="부적합"
+                        android:textSize="18sp"
+                        android:fontFamily="@font/jalnan">
+                    </RadioButton>
+                </RadioGroup>
+            </LinearLayout>
+
+
+        <!-- 2. 자재공급원 승인 요청서 -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="2) 자재공급원 승인 요청서 접수, 검토 및 승인"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="5dp"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:textColor="@color/sig_navy" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="20dp"
-                android:text="(1) 자동화재탐지설비"
+                android:text="(1) 품목 : "
                 android:textColor="@color/sig_navy"
-                android:textSize="16sp" />
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+            <EditText
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="10dp"
+                android:hint="품목 작성."
+                android:maxLength="50"
+                android:maxLines="1"
+                android:textColor="@color/sig_navy"
+                android:textSize="18sp"
+                android:inputType="text" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="(2) 문서번호 : "
+                android:textStyle="bold"
+                android:layout_marginStart="20dp"
+                android:textSize="16sp"
+                android:textColor="@color/sig_navy" />
+
+            <EditText
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="10dp"
+                android:hint="문서 번호를 입력해주세요."
+                android:maxLength="50"
+                android:maxLines="1"
+                android:textColor="@color/sig_navy"
+                android:textSize="18sp"
+                android:inputType="text" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:text="(3) 제조회사 : "
+                android:textColor="@color/sig_navy"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+            <EditText
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="10dp"
+                android:hint="제조한 회사를 입력해주세요."
+                android:maxLength="50"
+                android:maxLines="1"
+                android:textColor="@color/sig_navy"
+                android:textSize="18sp"
+                android:inputType="text" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="(4) 검토항목 : "
+                android:textStyle="bold"
+                android:layout_marginStart="20dp"
+                android:textSize="16sp"
+                android:textColor="@color/sig_navy" />
+
+            <EditText
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="10dp"
+                android:hint="검토항목을 입력해주세요. "
+                android:maxLength="50"
+                android:maxLines="1"
+                android:textColor="@color/sig_navy"
+                android:textSize="18sp" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:text="(5) 검토 결과 : "
+                android:layout_gravity="center"
+                android:textColor="@color/sig_navy"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+            <RadioGroup
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="48dp"
+                    android:text="적합"
+                    android:textSize="18sp"
+                    android:fontFamily="@font/jalnan">
+                </RadioButton>
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="48dp"
+                    android:text="부적합"
+                    android:textSize="18sp"
+                    android:fontFamily="@font/jalnan">
+                </RadioButton>
+            </RadioGroup>
+        </LinearLayout>
+</LinearLayout>
         </LinearLayout>
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="10dp"
+            android:background="@drawable/round_man2"
+            android:layout_marginTop="30dp"
             android:orientation="vertical">
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="2) 시공 상세도 승인 요청서 검토 및 승인"
+                android:text="3. 현장 점검 및 검측"
+                android:textSize="20sp"
+                android:fontFamily="@font/jalnan"
+                android:textColor="@color/sig_navy"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="1) 시공 검측 요청서 검측 및 승인"
                 android:layout_marginStart="10dp"
+                android:layout_marginTop="5dp"
                 android:textSize="16sp"
                 android:textStyle="bold"
                 android:textColor="@color/sig_navy" />
             <LinearLayout
-               android:layout_width="match_parent"
-               android:layout_height="match_parent"
-               android:orientation="horizontal">
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
+                    android:layout_marginStart="20dp"
                     android:text="(1) 위치 및 공종 : "
-                    android:layout_marginStart="20dp"
+                    android:textColor="@color/sig_navy"
                     android:textSize="16sp"
-                    android:textColor="@color/sig_navy" />
+                    android:textStyle="bold" />
+
                 <EditText
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:textSize="14sp"
-                    android:textColor="@color/sig_navy"
-                    android:hint="위치 및 공종을 작성해주세요."
                     android:layout_marginEnd="10dp"
+                    android:hint="품목 작성."
+                    android:maxLength="50"
                     android:maxLines="1"
-                    android:maxLength="50"/>
+                    android:textColor="@color/sig_navy"
+                    android:textSize="18sp"
+                    android:inputType="text" />
             </LinearLayout>
             <LinearLayout
                 android:layout_width="match_parent"
@@ -106,40 +619,47 @@
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="(2) 부 위 : "
+                    android:text="(2) 부  위 : "
+                    android:textStyle="bold"
                     android:layout_marginStart="20dp"
                     android:textSize="16sp"
                     android:textColor="@color/sig_navy" />
+
                 <EditText
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:textSize="14sp"
-                    android:textColor="@color/sig_navy"
-                    android:hint="위치 및 공종을 작성해주세요."
                     android:layout_marginEnd="10dp"
+                    android:hint="검토한 위치를 알려주세요."
+                    android:maxLength="50"
                     android:maxLines="1"
-                    android:maxLength="50"/>
+                    android:textColor="@color/sig_navy"
+                    android:textSize="18sp"
+                    android:inputType="text" />
             </LinearLayout>
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:orientation="horizontal">
+
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
+                    android:layout_marginStart="20dp"
                     android:text="(3) 문서번호 : "
-                    android:layout_marginStart="20dp"
+                    android:textColor="@color/sig_navy"
                     android:textSize="16sp"
-                    android:textColor="@color/sig_navy" />
+                    android:textStyle="bold" />
+
                 <EditText
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:textSize="14sp"
-                    android:textColor="@color/sig_navy"
+                    android:layout_marginEnd="10dp"
                     android:hint="문서번호를 입력해주세요."
-                    android:layout_marginEnd="10dp"
+                    android:maxLength="50"
                     android:maxLines="1"
-                    android:maxLength="50"/>
+                    android:textColor="@color/sig_navy"
+                    android:textSize="18sp"
+                    android:inputType="text" />
             </LinearLayout>
             <LinearLayout
                 android:layout_width="match_parent"
@@ -148,19 +668,21 @@
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="(4) 검토 항목 : "
+                    android:text="(4) 검측 사항 : "
+                    android:textStyle="bold"
                     android:layout_marginStart="20dp"
                     android:textSize="16sp"
                     android:textColor="@color/sig_navy" />
+
                 <EditText
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:textSize="14sp"
-                    android:textColor="@color/sig_navy"
-                    android:hint="검토 항목에 대해 적어주세요. "
                     android:layout_marginEnd="10dp"
+                    android:hint=" 검측 사항을 입력해주세요."
+                    android:maxLength="50"
                     android:maxLines="1"
-                    android:maxLength="50"/>
+                    android:textColor="@color/sig_navy"
+                    android:textSize="18sp" />
             </LinearLayout>
 
             <LinearLayout
@@ -170,34 +692,168 @@
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="(5) 검토 결과 : "
+                    android:text="(5) 검사 항목 : "
+                    android:textStyle="bold"
                     android:layout_marginStart="20dp"
                     android:textSize="16sp"
                     android:textColor="@color/sig_navy" />
+
                 <EditText
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:textSize="14sp"
-                    android:textColor="@color/sig_navy"
                     android:layout_marginEnd="10dp"
+                    android:hint="검사 항목을 작성해주세요 "
+                    android:maxLength="50"
                     android:maxLines="1"
-                    android:maxLength="50"/>
+                    android:textColor="@color/sig_navy"
+                    android:textSize="18sp" />
             </LinearLayout>
-
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="20dp"
+                    android:text="(6) 검토 결과 : "
+                    android:layout_gravity="center"
+                    android:textColor="@color/sig_navy"
+                    android:textSize="16sp"
+                    android:textStyle="bold" />
+                <RadioGroup
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+                    <RadioButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="48dp"
+                        android:text="적합"
+                        android:textSize="18sp"
+                        android:fontFamily="@font/jalnan">
+                    </RadioButton>
+                    <RadioButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="48dp"
+                        android:text="부적합"
+                        android:textSize="18sp"
+                        android:fontFamily="@font/jalnan">
+                    </RadioButton>
+                </RadioGroup>
+            </LinearLayout>
         </LinearLayout>
 
 
 
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/round_man2"
+            android:layout_marginTop="30dp"
 
+            android:orientation="vertical">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="4. 월간공정회의"
+                android:textSize="20sp"
+                android:fontFamily="@font/jalnan"
+                android:textColor="@color/sig_navy"/>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
 
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="20dp"
+                    android:text="1) 일시/장소 : "
+                    android:textColor="@color/sig_navy"
+                    android:textSize="16sp"
+                    android:textStyle="bold" />
 
+                <!-- 달력으로 날짜 선택-->
+                <CalendarView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:visibility="gone"
+                    android:layout_marginEnd="10dp" />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:maxLength="50"
+                    android:maxLines="1"
+                    android:textColor="@color/sig_navy"
+                    android:textSize="18sp"
+                    android:inputType="text"/>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="2) 참석자 : "
+                    android:textStyle="bold"
+                    android:layout_marginStart="20dp"
+                    android:textSize="16sp"
+                    android:textColor="@color/sig_navy" />
+
+                <EditText
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="10dp"
+                    android:hint="검토한 위치를 알려주세요."
+                    android:maxLength="50"
+                    android:maxLines="1"
+                    android:textColor="@color/sig_navy"
+                    android:textSize="18sp"
+                    android:inputType="text" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="20dp"
+                    android:text="(3) 주요 내용 : "
+                    android:textColor="@color/sig_navy"
+                    android:textSize="16sp"
+                    android:textStyle="bold" />
+
+                <EditText
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="10dp"
+                    android:hint="회의 내용을 입력해주세요."
+                    android:maxLength="50"
+                    android:maxLines="1"
+                    android:textColor="@color/sig_navy"
+                    android:textSize="18sp"
+                    android:inputType="text" />
+            </LinearLayout>
+        </LinearLayout>
+        <Button
+            android:id="@+id/daily_save_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="저장"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:layout_gravity="end"
+            android:background="@drawable/small_sig_button"
+            android:layout_marginEnd="10dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="50dp"/>
 
 
 
     </LinearLayout>
-
-
-
     </ScrollView>
 
 

@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
@@ -9,67 +8,72 @@
         android:id="@+id/toolbar"
         layout="@layout/z_project_intro_toolbar" />
 
-
     <ScrollView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/toolbar">
-        <!--테스트용, 지워주세요-->
 
         <LinearLayout
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:orientation="vertical">
-
-
             <LinearLayout
                 android:id="@+id/dele"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:background="@drawable/round_man"
-                android:orientation="vertical"
                 android:padding="20dp"
+                android:orientation="vertical"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent">
-
                 <ImageView
                     android:layout_width="match_parent"
-                    android:layout_height="200dp"
+                    android:layout_height="250dp"
                     android:background="@drawable/test" />
-
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:background="@color/sig_gray"
+                    android:text="경기도 남양주시 오금동 23번지"
+                    android:textSize="16sp"
+                    android:textColor="@color/sig_navy"
                     android:fontFamily="@font/jalnan"
                     android:padding="10dp"
-                    android:text="경기도 성남시 무슨구 무슨동"
-                    android:textColor="@color/sig_navy"
-                    android:textSize="18sp" />
+                    android:background="@color/sig_gray"
+                     />
 
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:orientation="horizontal"
-                    android:padding="10dp">
-
+                    android:padding="10dp"
+                    android:background="@drawable/round_man">
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:fontFamily="@font/jalnan"
                         android:text="종료 예정일 : "
+                        android:textSize="16sp"
                         android:textColor="@color/sig_navy"
-                        android:textSize="18sp" />
-
+                        android:fontFamily="@font/jalnan" />
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
                     <TextView
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:fontFamily="@font/jalnan"
-                        android:text="2022년 2월 3일 월요일(D-125일)"
+                        android:text="2022년 2월 3일 월요일"
+                        android:textSize="16sp"
                         android:textColor="@color/sig_navy"
-                        android:textSize="17sp" />
+                        android:fontFamily="@font/jalnan" />
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="(D-125일)"
+                        android:textSize="16sp"
+                        android:textColor="@color/sig_navy"
+                        android:fontFamily="@font/jalnan" />
+                    </LinearLayout>
                 </LinearLayout>
             </LinearLayout>
 
@@ -78,75 +82,57 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:orientation="vertical"
-                android:background="@drawable/round_man"
-                android:padding="15dp"
+                android:padding="20dp"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@id/dele">
-
                 <TextView
                     android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="0"
-                    android:fontFamily="@font/jalnan"
-                    android:gravity="center"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
                     android:text="위치 정보"
-                    android:textAlignment="center"
+                    android:textSize="22sp"
                     android:textColor="@color/sig_navy"
-                    android:textSize="26sp">
-
-                </TextView>
-
+                    android:fontFamily="@font/jalnan"
+                    android:textAlignment="center"
+                    android:gravity="center"
+                    android:background="@drawable/round_man_deep"/>
                 <!-- google map, kakao map api(위, 경도)-->
                 <ImageView
                     android:layout_width="match_parent"
-                    android:layout_height="253dp"
-                    android:background="@drawable/test5" />
+                    android:layout_height="250dp"
+                    android:background="@drawable/test5"/>
             </LinearLayout>
 
-
+            <!-- 날씨 정보 확인 - 날씨 api - sk 플래닛, 웨더아이, 케이웨더-->
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:orientation="vertical"
                 android:padding="20dp"
-
-                android:background="@drawable/round_man"
+                android:layout_marginBottom="100dp"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@id/show">
-
                 <TextView
                     android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="center"
-                    android:layout_weight="0"
-                    android:fontFamily="@font/jalnan"
-                    android:gravity="center"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
                     android:text="현재 날씨"
-                    android:textAlignment="center"
+                    android:textSize="22sp"
                     android:textColor="@color/sig_navy"
-                    android:textSize="26sp">
-
+                    android:fontFamily="@font/jalnan"
+                    android:textAlignment="center"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:background="@drawable/round_man_deep">
                 </TextView>
-
-                <!-- 날씨 api 사용 - sk 플래닛, 웨더아이, 케이웨더 -->
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="300dp"
-                    android:background="@drawable/testno"></LinearLayout>
+                    android:background="@drawable/testno">
+                </LinearLayout>
             </LinearLayout>
-
         </LinearLayout>
     </ScrollView>
-
-    <!--나중에 풀어주세요 테스트용으로 주석처리했습니다.
-    <androidx.recyclerview.widget.RecyclerView
-        android:layout_width="409dp"
-        android:layout_height="673dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/toolbar" />
--->
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -32,6 +32,7 @@ public class MainActivity extends AppCompatActivity {
 
         Button project_intro_btn = findViewById(R.id.project_intro_button);
         Button project_member_btn = findViewById(R.id.project_member_button);
+        Button detection_btn = findViewById(R.id.detection_btn);
         Button punchlist_btn = findViewById(R.id.punchlist_button);
         Button settings_btn = findViewById(R.id.setting_btn);
         Button notion_btn = findViewById(R.id.notion_btn);
@@ -61,9 +62,6 @@ public class MainActivity extends AppCompatActivity {
 
 
         project_intro_btn.setOnClickListener(new View.OnClickListener(){
-
-
-
             @Override
             public void onClick(View view){
                 Intent intent= new Intent(getApplicationContext(), ProjectIntroActivity.class);
@@ -87,6 +85,16 @@ public class MainActivity extends AppCompatActivity {
                 Intent intent= new Intent(getApplicationContext(), PunchListActivity.class);
                 startActivity(intent);
                 finish();
+            }
+        });
+
+        detection_btn.setOnClickListener(new View.OnClickListener(){
+            @Override
+            public void onClick(View view){
+                Intent intent= new Intent(getApplicationContext(), DetectionActivity.class);
+                startActivity(intent);
+                finish();
+
             }
         });
 

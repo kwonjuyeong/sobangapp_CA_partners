@@ -9,8 +9,10 @@
         layout="@layout/z_default_toolbar"
         android:id="@+id/toolbar"/>
 
+
+
     <LinearLayout
-        android:id="@+id/linearLayout2"
+        android:id="@+id/project_linear"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:background="@color/sig_navy"
@@ -40,6 +42,7 @@
                 android:textSize="12sp"
                 android:textColor="@color/sig_gray"/>
             <TextView
+                android:id="@+id/a1"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:padding="15dp"
@@ -58,29 +61,30 @@
             app:srcCompat="@drawable/friend_add" />
     </LinearLayout>
 
-    <!--개인적으로 사람 검색기능이 있으면 편할 것 같습니다. 또 비상 연락망?도 있으면 편리할 것 같네요-->
-
-
+    <!--개인적으로 사람 검색기능 추가?-->
     <!--리사이클러 or 리스트 뷰로 구현해야합니다. 테스트용으로 넣어놨습니다-->
 
 
     <ScrollView
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/linearLayout2">
+        app:layout_constraintTop_toBottomOf="@+id/project_linear">
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:orientation="vertical">
+            android:orientation="vertical"
+            app:layout_constraintTop_toBottomOf="@+id/project_linear">
 
             <LinearLayout
                 android:id="@+id/member_item"
                 android:layout_width="match_parent"
                 android:layout_height="80dp"
                 android:orientation="horizontal">
+
                 <ImageView
                     android:layout_width="100dp"
                     android:layout_height="match_parent"
@@ -371,7 +375,7 @@
                 android:id="@+id/member_item7"
                 android:layout_width="match_parent"
                 android:layout_height="80dp"
-                android:background="@color/sig_gray"
+                android:background="@drawable/round_man"
                 android:orientation="horizontal"
                 app:layout_constraintTop_toBottomOf="@+id/member_item6">
 
@@ -421,7 +425,7 @@
                 android:id="@+id/member_item8"
                 android:layout_width="match_parent"
                 android:layout_height="80dp"
-                android:background="@color/sig_gray"
+                android:background="@drawable/round_man"
                 android:orientation="horizontal"
                 app:layout_constraintTop_toBottomOf="@+id/member_item7">
 
@@ -435,6 +439,7 @@
                     android:layout_width="0dp"
                     android:layout_height="match_parent"
                     android:layout_weight="1"
+                    android:background="@drawable/round_man2"
                     android:orientation="vertical">
 
                     <TextView
@@ -471,7 +476,7 @@
                 android:id="@+id/member_item9"
                 android:layout_width="match_parent"
                 android:layout_height="80dp"
-                android:background="@color/sig_gray"
+                android:background="@drawable/round_man"
                 android:orientation="horizontal"
                 app:layout_constraintTop_toBottomOf="@+id/member_item8">
 
@@ -492,7 +497,7 @@
                         android:layout_height="wrap_content"
                         android:background="@drawable/round_man2"
                         android:padding="10dp"
-                        android:text="그래요"
+                        android:text="순신리"
                         android:textColor="@color/sig_navy"
                         android:textSize="16sp"
                         android:textStyle="bold" />
@@ -506,13 +511,13 @@
                         android:textColor="@color/sig_navy"
                         android:textSize="14sp" />
                 </LinearLayout>
+
                 <ImageView
                     android:layout_width="wrap_content"
                     android:layout_height="match_parent"
                     android:layout_weight="0.01"
                     android:background="@drawable/round_man2"
-                    app:srcCompat="@drawable/ic_baseline_keyboard_arrow_right_24">
-                </ImageView>
+                    app:srcCompat="@drawable/ic_baseline_keyboard_arrow_right_24"></ImageView>
             </LinearLayout>
         </LinearLayout>
     </ScrollView>

@@ -1,4 +1,4 @@
-package com.example.myapplication.punchlist;
+package com.example.myapplication.Detection_menu;
 
 import android.content.Intent;
 import android.os.Bundle;
@@ -7,15 +7,15 @@ import android.widget.ImageView;
 
 import androidx.appcompat.app.AppCompatActivity;
 
-import com.example.myapplication.ProjectMemberActivity;
-import com.example.myapplication.PunchListActivity;
+import com.example.myapplication.DetectionActivity;
 import com.example.myapplication.R;
 
-public class FeedbackActivity extends AppCompatActivity {
+public class CheckListActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.d_feedback);
+        setContentView(R.layout.d_checklist);
+
 
         ImageView comeback = findViewById(R.id.toolbar_back_btn);
 
@@ -23,21 +23,14 @@ public class FeedbackActivity extends AppCompatActivity {
         comeback.setOnClickListener(new View.OnClickListener(){
             @Override
             public void onClick(View view){
-                Intent intent= new Intent(getApplicationContext(), PunchListActivity.class);
+                Intent intent= new Intent(getApplicationContext(), DetectionActivity.class);
                 startActivity(intent);
                 finish();
+
+
             }
         });
 
-
-
-
-
-
-
-
-
     }
-
-
 }
+

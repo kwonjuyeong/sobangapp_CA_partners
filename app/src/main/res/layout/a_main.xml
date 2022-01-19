@@ -6,12 +6,14 @@
     android:layout_height="match_parent"
     tools:context=".LogoActivity">
 
+
+    <!-- 툴바-->
     <include
         layout="@layout/z_main_toolbar"
         android:id="@+id/toolbar"/>
-
+    <!-- 메인 윗 화면 (스피너 프로젝트 전환해주기)-->
     <LinearLayout
-        android:id="@+id/linearLayout2"
+        android:id="@+id/linearLayout"
         android:layout_width="match_parent"
         android:layout_height="110dp"
         android:background="@color/sig_navy"
@@ -47,12 +49,15 @@
         </androidx.appcompat.widget.SearchView>
     </LinearLayout>
 
+
+
+    <!-- 메인 메뉴-->
     <ScrollView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/linearLayout2">
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout">
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -60,8 +65,10 @@
             android:orientation="vertical"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/linearLayout2">
+            app:layout_constraintTop_toBottomOf="@+id/linearLayout">
 
+
+            <!-- 프로젝트 개요 메뉴 - 현장 정보, 지도 위치(map), 현장 날씨( -->
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="70dp"
@@ -135,7 +142,6 @@
             </LinearLayout>
 
             <LinearLayout
-                android:id="@+id/detection_layout"
                 android:layout_width="match_parent"
                 android:layout_height="70dp"
                 android:background="@drawable/round_man"
@@ -147,6 +153,7 @@
                     app:srcCompat="@drawable/gumch" />
 
                 <Button
+                    android:id="@+id/detection_btn"
                     android:layout_width="0dp"
                     android:layout_height="match_parent"
                     android:layout_weight="1"
@@ -194,6 +201,34 @@
                 <ImageView
                     android:layout_width="80dp"
                     android:layout_height="match_parent"
+                    app:srcCompat="@drawable/database" />
+
+                <Button
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@drawable/round_man"
+                    android:padding="10dp"
+                    android:text="DB 열람(?)"
+                    android:textAlignment="textStart"
+                    android:textColor="@color/black"
+                    android:textSize="20sp" />
+            </LinearLayout>
+
+
+
+
+            <!-- 업무 절차서 열람 - pdf형식 pdf파일 사용자 핸드폰에 저장 후 클릭하면 열기 -->
+            <LinearLayout
+                android:id="@+id/work_"
+                android:layout_width="match_parent"
+                android:layout_height="70dp"
+                android:background="@drawable/round_man"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="80dp"
+                    android:layout_height="match_parent"
                     app:srcCompat="@drawable/dmwatch" />
 
                 <Button
@@ -202,11 +237,12 @@
                     android:layout_weight="1"
                     android:background="@drawable/round_man"
                     android:padding="10dp"
-                    android:text="DB 열람"
+                    android:text="업무절차서 열람"
                     android:textAlignment="textStart"
                     android:textColor="@color/black"
                     android:textSize="20sp" />
             </LinearLayout>
+
 
             <LinearLayout
                 android:layout_width="match_parent"
@@ -216,7 +252,7 @@
                 <ImageView
                     android:layout_width="80dp"
                     android:layout_height="match_parent"
-                    app:srcCompat="@drawable/settingws" />
+                    app:srcCompat="@drawable/settings" />
 
                 <Button
                     android:id="@+id/setting_btn"
