@@ -37,17 +37,18 @@
         <entry key="..\:/Users/B460-TOMA/AndroidStudioProjects/MyApplication/app/src/main/res/drawable/round_man2.xml" value="0.3359375" />
         <entry key="..\:/Users/B460-TOMA/AndroidStudioProjects/MyApplication/app/src/main/res/drawable/round_man_deep.xml" value="0.38229166666666664" />
         <entry key="..\:/Users/B460-TOMA/AndroidStudioProjects/MyApplication/app/src/main/res/drawable/roundman_3.xml" value="0.3359375" />
+        <entry key="..\:/Users/B460-TOMA/AndroidStudioProjects/MyApplication/app/src/main/res/drawable/roundman_black.xml" value="0.21203703703703702" />
         <entry key="..\:/Users/B460-TOMA/AndroidStudioProjects/MyApplication/app/src/main/res/drawable/search.xml" value="0.3359375" />
         <entry key="..\:/Users/B460-TOMA/AndroidStudioProjects/MyApplication/app/src/main/res/drawable/sig_btn2.xml" value="0.38229166666666664" />
         <entry key="..\:/Users/B460-TOMA/AndroidStudioProjects/MyApplication/app/src/main/res/drawable/small_sig_button.xml" value="0.38229166666666664" />
         <entry key="..\:/Users/B460-TOMA/AndroidStudioProjects/MyApplication/app/src/main/res/layout/a_allscape_logo.xml" value="0.2545289855072464" />
-        <entry key="..\:/Users/B460-TOMA/AndroidStudioProjects/MyApplication/app/src/main/res/layout/a_login.xml" value="0.33" />
-        <entry key="..\:/Users/B460-TOMA/AndroidStudioProjects/MyApplication/app/src/main/res/layout/a_main.xml" value="0.33" />
+        <entry key="..\:/Users/B460-TOMA/AndroidStudioProjects/MyApplication/app/src/main/res/layout/a_login.xml" value="0.25" />
+        <entry key="..\:/Users/B460-TOMA/AndroidStudioProjects/MyApplication/app/src/main/res/layout/a_main.xml" value="0.25" />
         <entry key="..\:/Users/B460-TOMA/AndroidStudioProjects/MyApplication/app/src/main/res/layout/activity_main.xml" value="0.2545289855072464" />
         <entry key="..\:/Users/B460-TOMA/AndroidStudioProjects/MyApplication/app/src/main/res/layout/b_browse_db.xml" value="0.25" />
-        <entry key="..\:/Users/B460-TOMA/AndroidStudioProjects/MyApplication/app/src/main/res/layout/b_detection.xml" value="0.25" />
+        <entry key="..\:/Users/B460-TOMA/AndroidStudioProjects/MyApplication/app/src/main/res/layout/b_detection.xml" value="0.22" />
         <entry key="..\:/Users/B460-TOMA/AndroidStudioProjects/MyApplication/app/src/main/res/layout/b_project_intro.xml" value="0.33" />
-        <entry key="..\:/Users/B460-TOMA/AndroidStudioProjects/MyApplication/app/src/main/res/layout/b_project_member.xml" value="0.33" />
+        <entry key="..\:/Users/B460-TOMA/AndroidStudioProjects/MyApplication/app/src/main/res/layout/b_project_member.xml" value="0.25" />
         <entry key="..\:/Users/B460-TOMA/AndroidStudioProjects/MyApplication/app/src/main/res/layout/b_punch_list.xml" value="0.33" />
         <entry key="..\:/Users/B460-TOMA/AndroidStudioProjects/MyApplication/app/src/main/res/layout/b_setting.xml" value="0.25" />
         <entry key="..\:/Users/B460-TOMA/AndroidStudioProjects/MyApplication/app/src/main/res/layout/b_work_notion.xml" value="0.5" />
@@ -80,13 +81,20 @@
         <entry key="..\:/Users/B460-TOMA/AndroidStudioProjects/MyApplication/app/src/main/res/layout/fragment_feedback.xml" value="0.31979166666666664" />
         <entry key="..\:/Users/B460-TOMA/AndroidStudioProjects/MyApplication/app/src/main/res/layout/fragment_jajae_accept.xml" value="0.36614583333333334" />
         <entry key="..\:/Users/B460-TOMA/AndroidStudioProjects/MyApplication/app/src/main/res/layout/gumexam.xml" value="0.2" />
-        <entry key="..\:/Users/B460-TOMA/AndroidStudioProjects/MyApplication/app/src/main/res/layout/materialrequest.xml" value="0.25" />
+        <entry key="..\:/Users/B460-TOMA/AndroidStudioProjects/MyApplication/app/src/main/res/layout/material_recycler.xml" value="0.1778115501519757" />
+        <entry key="..\:/Users/B460-TOMA/AndroidStudioProjects/MyApplication/app/src/main/res/layout/materialrequest.xml" value="0.22" />
         <entry key="..\:/Users/B460-TOMA/AndroidStudioProjects/MyApplication/app/src/main/res/layout/t_notiontest1.xml" value="0.25" />
         <entry key="..\:/Users/B460-TOMA/AndroidStudioProjects/MyApplication/app/src/main/res/layout/t_notiontest2.xml" value="0.1778115501519757" />
         <entry key="..\:/Users/B460-TOMA/AndroidStudioProjects/MyApplication/app/src/main/res/layout/t_notiontest3.xml" value="0.1778115501519757" />
+        <entry key="..\:/Users/B460-TOMA/AndroidStudioProjects/MyApplication/app/src/main/res/layout/x_custom_item_1line.xml" value="0.36614583333333334" />
+        <entry key="..\:/Users/B460-TOMA/AndroidStudioProjects/MyApplication/app/src/main/res/layout/x_intro_recycleritem_info.xml" value="0.36614583333333334" />
+        <entry key="..\:/Users/B460-TOMA/AndroidStudioProjects/MyApplication/app/src/main/res/layout/x_intro_recycleritem_location.xml" value="0.2" />
+        <entry key="..\:/Users/B460-TOMA/AndroidStudioProjects/MyApplication/app/src/main/res/layout/x_intro_recycleritem_weather.xml" value="0.36614583333333334" />
+        <entry key="..\:/Users/B460-TOMA/AndroidStudioProjects/MyApplication/app/src/main/res/layout/x_member_recycleritem_info.xml" value="0.36614583333333334" />
         <entry key="..\:/Users/B460-TOMA/AndroidStudioProjects/MyApplication/app/src/main/res/layout/z_checklist_toolbar.xml" value="0.22" />
         <entry key="..\:/Users/B460-TOMA/AndroidStudioProjects/MyApplication/app/src/main/res/layout/z_default_toolbar.xml" value="0.25" />
         <entry key="..\:/Users/B460-TOMA/AndroidStudioProjects/MyApplication/app/src/main/res/layout/z_main_toolbar.xml" value="0.1778115501519757" />
+        <entry key="..\:/Users/B460-TOMA/AndroidStudioProjects/MyApplication/app/src/main/res/layout/z_matarial_toolbar.xml" value="0.1778115501519757" />
         <entry key="..\:/Users/B460-TOMA/AndroidStudioProjects/MyApplication/app/src/main/res/layout/z_project_intro_toolbar.xml" value="0.25" />
         <entry key="..\:/Users/B460-TOMA/AndroidStudioProjects/MyApplication/app/src/main/res/layout/z_save_default_toolbar.xml" value="0.25" />
         <entry key="..\:/Users/B460-TOMA/AndroidStudioProjects/MyApplication/app/src/main/res/layout/z_save_toolbar.xml" value="0.22" />

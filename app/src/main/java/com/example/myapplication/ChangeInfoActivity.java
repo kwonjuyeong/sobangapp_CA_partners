@@ -14,8 +14,8 @@ public class ChangeInfoActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        //setContentView(R.layout.c_change_information);
         setContentView(R.layout.c_change_information);
-
         ImageButton comeback = findViewById(R.id.toolbar_menu);
 
 

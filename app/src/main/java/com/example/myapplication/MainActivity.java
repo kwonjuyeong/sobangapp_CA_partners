@@ -46,7 +46,7 @@ public class MainActivity extends AppCompatActivity {
 
 
         ArrayAdapter<String> adapter = new ArrayAdapter<String>(
-                this, R.layout.d_custom_item_1line, facilityList);
+                this, R.layout.x_custom_item_1line, facilityList);
         spinners.setAdapter(adapter);
         spinners.setSelection(0);
         spinners.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {

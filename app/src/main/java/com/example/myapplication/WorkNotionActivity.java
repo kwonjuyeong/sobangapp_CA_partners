@@ -5,6 +5,7 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
+import android.widget.ImageButton;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.Toast;
@@ -23,11 +24,11 @@ public class WorkNotionActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.b_work_notion);
 
-        Button yes1 = findViewById(R.id.yesbtn);
-        Button yes2 = findViewById(R.id.yesbtn2);
-        Button yes3 = findViewById(R.id.yesbtn3);
-        Button yes4 = findViewById(R.id.yesbtn4);
-        Button yes5 = findViewById(R.id.yesbtn5);
+        ImageButton yes1 = findViewById(R.id.yesbtn);
+        ImageButton yes2 = findViewById(R.id.yesbtn2);
+        ImageButton yes3 = findViewById(R.id.yesbtn3);
+        ImageButton yes4 = findViewById(R.id.yesbtn4);
+        ImageButton yes5 = findViewById(R.id.yesbtn5);
         ImageView comeback = findViewById(R.id.toolbar_back_btn);
         LinearLayout layout = (LinearLayout) findViewById(R.id.hi5);
 
